@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#8BC34A"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="#000"
+        android:textSize="@dimen/_26ssp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:visibility="invisible"
+        android:text="Correct Answer" />
+
+    <TextView
+        android:id="@+id/txtRightAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:background="#000"
+        android:padding="@dimen/_10sdp"
+        android:text="This is Right Answer"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="@dimen/_26ssp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_34sdp"
+        app:cardCornerRadius="@dimen/_7sdp"
+        >
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:background="#B28748"
+            android:padding="@dimen/_7sdp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_26ssp"
+            android:text="Random Text"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:cardCornerRadius="@dimen/_11sdp"
+        >
+
+        <EditText
+            android:id="@+id/etUserInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textStyle="bold"
+            android:background="#fff"
+            android:padding="@dimen/_15sdp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_26ssp"
+            android:inputType="text"
+            android:hint="Enter Your Text" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_23ssp"
+            android:textColor="#fff"
+            android:background="#962222"
+            android:padding="@dimen/_11sdp"
+            android:text="Show" />
+
+        <Button
+            android:id="@+id/btCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_23ssp"
+            android:textColor="#fff"
+            android:background="#5B0000"
+            android:padding="@dimen/_11sdp"
+            android:text="Check" />
+
+        <Button
+            android:id="@+id/btNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_23ssp"
+            android:textColor="#fff"
+            android:background="#962222"
+            android:padding="@dimen/_11sdp"
+            android:text="Next" />
+    </LinearLayout>
+</LinearLayout>
